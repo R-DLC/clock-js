@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        :root {
+            --green: #0E7550;
+            --lime: #84DF83;
+            --peach: #FC9F70;
+            --black: #141414;
+            --white: #f9f9f9;
+            color: var(--black);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        html {
+            background-color: var(--white);
+        }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+    .config {
+        flex-grow: 1;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Clock maker</h1>
+        <div id="target"></div>
+    </div>
+    <div class="config">
+        <div class="clock-creation">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="duration">Durée</label>
+            <input type="range" id="duration" name="duration" min="1" max="60">
+            <button id="creator">Create Clock</button>
+        </div>
+        <div class="limit-settings">
+            
+        </div>
+    </div>
+    
+    <script src="vue.js"></script>
+    <script src="timer.js" type="module"></script>
+</body>
+</html>
